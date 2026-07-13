@@ -1,1 +1,27 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ .Title }}</title>
+
+{{ $style := resources.Get "css/style.css" | resources.Minify }}
+
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+</head>
+
+<body>
+
+{{ block "main" . }}
+
+{{ end }}
+
+</body>
+
+</html>
