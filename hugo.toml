@@ -1,1 +1,3 @@
-
+baseURL = "https://reinnatalia25.github.io/tacocat2/"
+languageCode = "en-us"
+title = "Tacocat"
