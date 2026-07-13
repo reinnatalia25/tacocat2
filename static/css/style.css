@@ -7,26 +7,42 @@ box-sizing:border-box;
 }
 
 
-body{
 
+body{
 
 font-family:"Courier New", monospace;
 
-
 color:white;
 
-
-background-image:url("/tacocat2/images/background.jpg");
-
+background:url("/tacocat2/images/background.jpg");
 
 background-size:cover;
 
-
-background-position:center;
-
-
 background-attachment:fixed;
 
+}
+
+
+
+
+section{
+
+padding:100px 8%;
+
+}
+
+
+
+
+h2{
+
+font-size:60px;
+
+letter-spacing:8px;
+
+text-transform:uppercase;
+
+margin-bottom:20px;
 
 }
 
@@ -38,21 +54,21 @@ background-attachment:fixed;
 
 .hero{
 
-
 height:100vh;
-
 
 display:flex;
 
-
 justify-content:space-between;
-
 
 align-items:center;
 
+}
 
-padding:80px;
 
+
+.hero-title{
+
+width:55%;
 
 }
 
@@ -60,57 +76,42 @@ padding:80px;
 
 .hero-title h1{
 
-
 font-size:90px;
-
-
-letter-spacing:12px;
-
-
-font-weight:bold;
-
 
 line-height:.9;
 
+letter-spacing:12px;
 
 }
+
+
+
+.hero-title p{
+
+margin-top:40px;
+
+font-size:22px;
+
+line-height:1.6;
+
+}
+
 
 
 
 .scroll{
 
+width:350px;
 
-width:400px;
+background:#d9c39a;
 
+color:#2b2118;
 
-background:#e7d7b2;
+padding:40px;
 
+font-family:Georgia;
 
-color:#30261b;
-
-
-padding:50px;
-
-
-border-radius:8px;
-
-
-font-family:Georgia, serif;
-
-
-box-shadow:
-0 20px 50px rgba(0,0,0,.6);
-
-
-}
-
-
-
-.scroll h2{
-
-
-margin-bottom:20px;
-
+box-shadow:0 20px 40px black;
 
 }
 
@@ -120,127 +121,59 @@ margin-bottom:20px;
 
 
 
-/* GENERAL SECTIONS */
+/* STORY */
 
 
-.section{
+.story{
 
-
-min-height:700px;
-
-
-padding:100px;
-
-
-background:rgba(0,0,0,.35);
-
+background:rgba(0,0,0,.45);
 
 }
 
-
-
-
-h2{
-
-
-font-size:60px;
-
-
-letter-spacing:5px;
-
-
-}
-
-
-
-
-.subtitle{
-
-
-font-size:24px;
-
-
-margin:20px 0 50px;
-
-
-}
-
-
-
-
-
-/* CHAPTERS */
 
 
 .chapter-grid{
 
-
-display:grid;
-
-
-grid-template-columns:
-repeat(4,1fr);
-
+display:flex;
 
 gap:30px;
 
+margin-top:50px;
 
 }
 
 
 
-.chapter-card{
+.chapter{
 
+height:250px;
+
+width:250px;
 
 background:white;
-
-
-height:350px;
-
 
 color:black;
 
+display:flex;
 
-text-decoration:none;
+justify-content:center;
 
+align-items:center;
+
+font-size:25px;
+
+border:5px solid #aaa;
 
 transition:.3s;
 
-
 }
 
 
 
-.chapter-card:hover{
-
+.chapter:hover{
 
 transform:translateY(-15px);
 
-
-}
-
-
-
-.chapter-image{
-
-
-height:270px;
-
-
-background:#777;
-
-
-}
-
-
-
-
-.chapter-card h3{
-
-
-padding:20px;
-
-
 }
 
 
@@ -249,45 +182,42 @@ padding:20px;
 
 
 
-
-/* MEMES */
-
-
-.meme-grid{
+/* GALLERY */
 
 
-display:grid;
+.gallery{
 
 
-grid-template-columns:
-repeat(3,1fr);
-
-
-gap:40px;
+background:rgba(0,0,0,.3);
 
 
 }
 
 
 
-.photo{
+.meme-row{
+
+display:flex;
+
+gap:30px;
+
+margin-top:40px;
+
+}
 
 
-height:300px;
 
+.meme{
+
+height:220px;
+
+width:220px;
 
 background:white;
 
+border:12px solid white;
 
-border:15px solid white;
-
-
-box-shadow:
-0 10px 30px black;
-
-
-transform:rotate(-3deg);
-
+box-shadow:0 10px 30px black;
 
 }
 
@@ -300,65 +230,53 @@ transform:rotate(-3deg);
 /* CREW */
 
 
-.crew-grid{
+.crew{
 
-
-display:grid;
-
-
-grid-template-columns:
-repeat(3,1fr);
-
-
-gap:30px;
-
+background:rgba(0,0,0,.55);
 
 }
 
 
 
-.crew-card{
+.crew-box{
 
-
-height:300px;
-
-
-border:2px solid white;
-
-
-background:rgba(255,255,255,.15);
-
+height:450px;
 
 display:flex;
 
+background:rgba(255,255,255,.1);
+
+margin-top:40px;
+
+}
+
+
+
+.crew-image{
+
+width:40%;
+
+display:flex;
 
 align-items:center;
 
-
 justify-content:center;
 
-
-font-size:30px;
-
-
-transition:.3s;
-
+background:#555;
 
 }
 
 
 
-.crew-card:hover{
+.crew-info{
 
+width:60%;
 
-background:white;
+padding:60px;
 
+font-size:22px;
 
-color:black;
-
-
-transform:scale(1.08);
-
+line-height:1.8;
 
 }
 
@@ -368,64 +286,51 @@ transform:scale(1.08);
 
 
 
+/* BEHIND */
 
-/* BEHIND SCENES */
+
+.behind{
+
+padding-bottom:150px;
+
+}
+
 
 
 .behind-box{
 
-
-display:grid;
-
-
-grid-template-columns:40% 60%;
-
-
-background:rgba(0,0,0,.6);
-
-
-padding:40px;
-
-
-}
-
-
-
-.behind-image{
-
-
-height:350px;
-
-
-background:white;
-
-
-color:black;
-
+height:250px;
 
 display:flex;
 
-
-align-items:center;
-
-
-justify-content:center;
-
+background:rgba(0,0,0,.6);
 
 }
 
 
 
-.behind-text{
+.behind-box div:first-child{
 
+width:35%;
+
+background:white;
+
+color:black;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+
+.behind-box div:last-child{
 
 padding:40px;
 
-
-font-size:22px;
-
-
-line-height:1.8;
-
+font-size:20px;
 
 }
