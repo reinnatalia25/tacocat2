@@ -6,9 +6,9 @@ box-sizing:border-box;
 
 body{
 
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 
-background-image:url("/images/background.jpg");
+background:url("/images/background.jpg");
 
 background-size:cover;
 
@@ -20,15 +20,13 @@ color:white;
 
 }
 
-/* Every section */
-
 section{
 
 padding:120px 10%;
 
-}
+backdrop-filter:brightness(.95);
 
-/* Hero */
+}
 
 .hero{
 
@@ -46,33 +44,41 @@ gap:80px;
 
 .hero-left h1{
 
-font-size:6rem;
-
-text-transform:uppercase;
+font-size:7rem;
 
 line-height:.9;
 
-letter-spacing:6px;
+letter-spacing:8px;
+
+text-transform:uppercase;
 
 }
 
 .scroll{
 
-background:#e8dcc0;
+background:#e9d9b8;
 
-padding:45px;
+padding:50px;
 
-color:#333;
+border-radius:6px;
 
-border-radius:8px;
+font-family:Georgia;
 
-font-family:Georgia, serif;
+color:#2c2c2c;
 
-box-shadow:0 15px 40px rgba(0,0,0,.45);
+box-shadow:0 20px 60px rgba(0,0,0,.5);
 
 }
 
-/* Chapter cards */
+.subtitle{
+
+margin-top:15px;
+
+margin-bottom:40px;
+
+font-size:1.2rem;
+
+}
 
 .chapter-grid{
 
@@ -80,41 +86,43 @@ display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-gap:30px;
-
-margin-top:40px;
+gap:35px;
 
 }
 
 .chapter-card{
 
-height:320px;
+text-decoration:none;
 
 background:white;
 
 color:black;
 
-display:flex;
+overflow:hidden;
 
-align-items:center;
-
-justify-content:center;
-
-font-size:2rem;
-
-text-decoration:none;
-
-transition:.3s;
+transition:.35s;
 
 }
 
 .chapter-card:hover{
 
-transform:scale(1.05);
+transform:translateY(-10px);
 
 }
 
-/* Meme Gallery */
+.chapter-image{
+
+height:260px;
+
+background:#999;
+
+}
+
+.chapter-card h3{
+
+padding:25px;
+
+}
 
 .meme-grid{
 
@@ -122,27 +130,23 @@ display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-gap:25px;
-
-margin-top:40px;
+gap:35px;
 
 }
 
 .polaroid{
 
-height:260px;
+height:270px;
 
 background:white;
 
-border:10px solid white;
+border:12px solid white;
 
-box-shadow:0 10px 30px rgba(0,0,0,.4);
+box-shadow:0 12px 35px rgba(0,0,0,.5);
 
 transform:rotate(-2deg);
 
 }
-
-/* Crew */
 
 .crew-grid{
 
@@ -150,9 +154,7 @@ display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-gap:30px;
-
-margin-top:40px;
+gap:35px;
 
 }
 
@@ -164,11 +166,11 @@ border:2px solid white;
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
 
-backdrop-filter:blur(8px);
+align-items:center;
+
+background:rgba(255,255,255,.1);
 
 transition:.3s;
 
@@ -180,13 +182,11 @@ background:white;
 
 color:black;
 
-transform:translateY(-8px);
+transform:scale(1.05);
 
 }
 
-/* Behind */
-
-.behind-box{
+.behind{
 
 display:grid;
 
@@ -196,25 +196,25 @@ gap:50px;
 
 margin-top:40px;
 
-background:rgba(0,0,0,.6);
+background:rgba(0,0,0,.55);
 
 padding:40px;
 
 }
 
-.behind-image{
-
-height:320px;
+.behind-photo{
 
 background:white;
 
-color:black;
+height:350px;
 
 display:flex;
 
+justify-content:center;
+
 align-items:center;
 
-justify-content:center;
+color:black;
 
 }
 
@@ -223,13 +223,5 @@ justify-content:center;
 font-size:1.2rem;
 
 line-height:1.8;
-
-}
-
-.subtitle{
-
-margin-top:10px;
-
-margin-bottom:35px;
 
 }
