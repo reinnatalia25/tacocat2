@@ -122,7 +122,21 @@ line-height:1.6;
     radial-gradient(circle at top,#f3e6be 0,#e4cf9b 80%);
 }
 
+.scroll h2{
 
+    margin-top:0;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+
+    text-align:center;
+
+    font-family:Georgia,serif;
+
+    letter-spacing:1px;
+
+}
 
 
 
