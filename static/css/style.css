@@ -186,23 +186,23 @@ transform:translateY(-15px);
 
 display:flex;
 
-gap:35px;
+flex-wrap:wrap;
 
 justify-content:center;
 
-flex-wrap:wrap;
+gap:40px;
 
-margin-top:50px;
+margin-top:60px;
 
 }
 
 .chapter-card{
 
-width:260px;
+width:320px;
 
-height:360px;
+height:460px;
 
-perspective:1200px;
+perspective:1400px;
 
 cursor:pointer;
 
@@ -269,15 +269,18 @@ top:20px;
 
 left:20px;
 
-font-size:28px;
+font-size:30px;
 
 font-weight:bold;
 
-background:rgba(0,0,0,.6);
+background:rgba(0,0,0,.75);
 
-padding:10px 18px;
+padding:12px 20px;
+
+border-radius:8px;
 
 }
+
 
 .released{
 
@@ -299,19 +302,19 @@ font-weight:bold;
 
 .chapter-back{
 
-background:#0d1427;
+background:linear-gradient(#09111f,#182947);
 
 color:white;
 
 transform:rotateY(180deg);
 
-padding:30px;
+padding:35px;
 
 display:flex;
 
 flex-direction:column;
 
-justify-content:center;
+justify-content:space-between;
 
 }
 
@@ -325,9 +328,13 @@ font-size:30px;
 
 .chapter-back p{
 
-line-height:1.7;
+font-size:18px;
 
-margin-bottom:30px;
+line-height:1.8;
+
+margin:20px 0;
+
+flex-grow:1;
 
 }
 
