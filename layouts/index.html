@@ -87,26 +87,66 @@ Choose a chapter and begin the adventure.
 
 <div class="chapter-grid">
 
+    <!-- Chapter 1 -->
+    <div class="chapter-card">
 
-<div class="chapter">
-CHAPTER ONE
-</div>
+        <div class="chapter-inner">
 
+            <!-- FRONT -->
+            <div class="chapter-front">
 
-<div class="chapter">
-CHAPTER TWO
-</div>
+                <img src="/tacocat2/images/chapter1.jpg" alt="Chapter One">
 
+                <div class="chapter-title">
+                    CHAPTER ONE
+                </div>
 
-<div class="chapter">
-CHAPTER THREE
-</div>
+                <div class="released">
+                    Released
+                </div>
 
+            </div>
 
-<div class="chapter">
-CHAPTER FOUR
-</div>
+            <!-- BACK -->
+            <div class="chapter-back">
 
+                <h3>First Transmission</h3>
+
+                <p>
+
+                A mysterious signal appears from the unknown.
+
+                TacoCat detects the transmission and begins
+                following its source, unaware of where the
+                journey will lead.
+
+                </p>
+
+                <button class="read-button">
+
+                Read Chapter →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Placeholder Chapters -->
+
+    <div class="chapter-card placeholder">
+        Chapter Two
+    </div>
+
+    <div class="chapter-card placeholder">
+        Chapter Three
+    </div>
+
+    <div class="chapter-card placeholder">
+        Chapter Four
+    </div>
 
 </div>
 
@@ -264,7 +304,24 @@ World building.
 </section>
 
 
+<script>
 
+const cards = document.querySelectorAll(".chapter-card");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        if(card.classList.contains("placeholder")) return;
+
+        card.classList.toggle("flip");
+
+    });
+
+});
+
+</script>
+  
 </body>
 
 </html>
